@@ -42,7 +42,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         // Verifica se usuário preencheu o nome
         if (name != "") {
             // salva nome no sharedPreferences
-            SecurityPreference(this).storeString("USER_NAME", name)
+            SecurityPreference(this).storeString(MotivationConstants.KEY.USER_NAME, name)
             startActivity(Intent(this, MainActivity::class.java))
 
             // Impede que seja possível voltar a Activity

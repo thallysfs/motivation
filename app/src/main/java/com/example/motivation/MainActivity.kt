@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun handleUserName() {
         // resgata nome no sharedPreferences
-        val name = SecurityPreference(this).getString("USER_NAME")
+        val name = SecurityPreference(this).getString(MotivationConstants.KEY.USER_NAME)
         val helloText = getString(R.string.hello_user, name)
         println(helloText)// Use resource string with placeholder
         binding.textUserName.text = helloText
